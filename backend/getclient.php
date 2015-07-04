@@ -312,20 +312,32 @@ Ihr Computer öffnet den Umschlag (d.h. entschlüsselt die Wahlscheinnummer) und
 	<!--  <div id="diagnosisControlDiv" style="display:none"></div>   -->
 	<div id="all">
 		<div id="ci">
-		<div id="logoimg">
+                <div id="ci">
+                        <img id="pplogoimg" height="80" alt="PPLogo" align="left"
 EOT;
 
 
 
-readfile($pathToClient . 'logo125x149.svg');
+'data:image/png;base64,' . base64_encode(file_get_contents($pathToClient . 'pplogo.png'));
 
 
 
 echo <<<EOT
-		</div>
-			<h1>VVVote</h1>
-			Online Wahl: Anonyme und nachvollziehbare Abstimmungen (in Entwicklung)
-		</div>
+			>
+                        <img id="logoimg" height="80" alt="Logo" align="right"
+EOT;
+
+
+
+'data:image/svg+xml;base64,' . base64_encode(file_get_contents($pathToClient . 'logo125x149.svg'));
+
+
+
+echo <<<EOT
+			>
+                        <h1>Urabstimmung mit VVVote</h1>
+                        Online Wahl: Anonyme und nachvollziehbare Abstimmungen
+                </div>
 
 		<div id="nav">
 			 <a id="newElectionLink" href="javascript:page = newElectionPage; page.display(); // handleNewElection();"  >Neue Abstimmung anlegen</a> &nbsp;&nbsp;&nbsp;

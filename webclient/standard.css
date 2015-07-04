@@ -13,8 +13,8 @@ div#all { /* base definition for all content */
 }
 
 div#ci {
-	background-color: orange;
-	color: #0B0B61;
+	background-color: #F9B200;
+	color: black;
 	text-align: center;
 	font-size: 18px;
 	min-height: 150px;
@@ -27,7 +27,7 @@ div#logoimg {
 
 div#ci h1 {
 	font-size: 24px;
-	color: #0B0B61;
+	color: black;
 }
 
 /*** curr **/
@@ -70,7 +70,7 @@ div#steps h1 {
 
 /*** Navigation bar ***/
 div#nav {
-	background-color: #0B0B61;
+	background-color: black;
 	text-align: center;
 	color: white;
 	display: block;
@@ -85,7 +85,7 @@ div#nav a {
 }
 
 div#nav a:hover {
-	background: black;
+	background: #444444;
 }
 
 /*** Log ***/

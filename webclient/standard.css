@@ -1,9 +1,18 @@
 @CHARSET "ISO-8859-1";
 /***** Corporate Identity *****/
+
+@font-face {
+    font-family: FontDefault;
+    src: local(Aller),
+        url(../fonts/aller_rg.eot) format("embedded-opentype"),
+        url(../fonts/aller_rg.ttf) format("truetype");
+        url(../fonts/aller_rg.woff) format("woff");
+}
+
 body {
 	background-color: grey; /* color outside the content */
 	padding: 0.4em;
-	font-family: serif;
+	font-family: FontDefault;
 }
 
 div#all { /* base definition for all content */
@@ -81,7 +90,7 @@ div#nav a {
 	text-align: center;
 	color: white;
 	padding: 0.4em;
-	font-family: sans-serif;
+	font-family: FontDefault;
 }
 
 div#nav a:hover {

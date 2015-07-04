@@ -312,29 +312,28 @@ Ihr Computer öffnet den Umschlag (d.h. entschlüsselt die Wahlscheinnummer) und
 	<!--  <div id="diagnosisControlDiv" style="display:none"></div>   -->
 	<div id="all">
 		<div id="ci">
-                <div id="ci">
-                        <img id="pplogoimg" height="80" alt="PPLogo" align="left"
+                        <img id="pplogoimg" height="80" alt="Piratenpartei" align="left" src="
 EOT;
 
 
 
-'data:image/png;base64,' . base64_encode(file_get_contents($pathToClient . 'pplogo.png'));
+echo('data:image/png;base64,' . base64_encode(file_get_contents($pathToClient . 'pplogo.png')));
 
 
 
 echo <<<EOT
-			>
-                        <img id="logoimg" height="80" alt="Logo" align="right"
+			">
+                        <img id="logoimg" height="80" alt="Logo" align="right" src="
 EOT;
 
 
 
-'data:image/svg+xml;base64,' . base64_encode(file_get_contents($pathToClient . 'logo125x149.svg'));
+echo('data:image/svg+xml;base64,' . base64_encode(file_get_contents($pathToClient . 'logo125x149.svg')));
 
 
 
 echo <<<EOT
-			>
+			">
                         <h1>Urabstimmung mit VVVote</h1>
                         Online Wahl: Anonyme und nachvollziehbare Abstimmungen
                 </div>
